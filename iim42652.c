@@ -243,7 +243,7 @@ uint8_t iim42652_read_fifo(uint8_t* data, uint16_t *fifo_size, const struct iim4
 }
 
 
-uint8_t iim42652_get_sensor_data(uint32_t* gyro_data, uint8_t* gyro_count, uint32_t* accel_data, uint8_t* accel_count, const uint8_t arr_size, const struct iim42652_dev *dev)
+uint8_t iim42652_get_sensor_data(int32_t* gyro_data, uint8_t* gyro_count, int32_t* accel_data, uint8_t* accel_count, const uint8_t arr_size, const struct iim42652_dev *dev)
 {
         uint8_t iim42652_fifo_data[2048];
         uint16_t fifo_size;

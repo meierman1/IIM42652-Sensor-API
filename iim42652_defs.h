@@ -290,6 +290,13 @@ struct iim42652_settings
 };
 
 
+
+/**
+ * \brief SPI device handle
+ */
+typedef const void* spi_device;
+
+
 /*!
  * @brief iim42652 device structure
  */
@@ -300,6 +307,7 @@ struct iim42652_dev {
         iim42652_wrt_fptr_t write;
         /*! Delay function pointer */
         iim42652_delay_fptr_t delay_ms;
+
         spi_device spi_dev;
 
         /*! Sensor settings */
