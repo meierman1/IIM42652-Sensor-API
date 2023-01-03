@@ -1,5 +1,5 @@
 # IIM42652-Sensor-API
-Basic functions to use IIM42652 IMU.
+Basic functions to use TDK InvenSense IIM-42652 IMU.
 The repository includes iim42652.h, iim42652.c and iim42652_defs.h files.
 
 ## Integration details
